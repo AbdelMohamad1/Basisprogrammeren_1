@@ -7,14 +7,19 @@ int a, b, c;
 
 int main() {
 
-
+	printf_s("Wat is integer a ");
 	scanf_s("%d", &a); 
-		scanf_s("%d", &b);
 
-	c = a + b;
+	printf_s("Wat is integer b ");
+	scanf_s("%d", &b);
+
+	printf_s("Wat is integer c ");
+	scanf_s("%d", &c);
+
+	c = (a + b + c) / 3;
 
 
 
-	printf_s("Het antwoord van %d/%d is: %d.",a,b,c);
+	printf_s("Het Gemiddelede is %d",c);
 
 }
