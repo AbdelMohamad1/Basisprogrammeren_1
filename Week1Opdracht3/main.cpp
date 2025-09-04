@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int a, b;
+int a, b, c;
 
 
 int main() {
@@ -11,14 +11,24 @@ int main() {
 	printf_s("Wat is integer b ");
 	scanf_s("%d", &b);
 
-	if (a > b) {
+	printf_s("Wat is integer c ");
+	scanf_s("%d", &c );
+
+	if (a > b && a> c) {
 		printf_s("%d", a);
 
 	}
-	else {
-		
+	else if (b > a && b> c) {
+
 		printf_s("%d", b);
-	
+
 	}
+	else{
+		printf_s("%d", c);
+
+	}
+		
+	
+
 
 }
